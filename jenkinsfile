@@ -1,0 +1,22 @@
+@Library('mylibrary')_
+pipeline
+{
+    agent any
+    stages
+    {
+        stage('run shared library code')
+        {
+            steps
+            {
+                script
+                {
+                    math.sum(20,10)
+                    math.sub(5,9876)
+                    math.rem(12345,56)
+                    math.sum(87654,5678)
+                    math.product(8765,123)
+                }
+            }
+        }
+    }
+}
