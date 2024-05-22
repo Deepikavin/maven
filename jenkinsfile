@@ -4,7 +4,7 @@ pipeline
     agent any
     stages
     {
-        stage('run shared library code')
+        stage('run shared library code in loans')
         {
             steps
             {
